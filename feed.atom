@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Google Workspace Status Dashboard Updates</title>
+  <updated>2022-11-30T19:04:17+00:00</updated>
+  <link href="https://www.google.com/appsstatus/dashboard/" rel="alternate" type="text/html"></link>
+  <link href="https://www.google.com/appsstatus/dashboard/en/feed.atom" rel="self"></link>
+  <author>
+    <name>Google Workspace</name>
+  </author>
+  <id>https://www.google.com/appsstatus/dashboard/</id>
+  <entry>
+    <title>RESOLVED: We're aware of a problem with Google Meet affecting a significant subset of users. We will provide an update by Oct 31, 2022, 2:00 AM UTC detailing when we expect to resolve the problem. Please note that this resolution time is an estimate and may change.</title>
+    <link href="https://www.google.com/appsstatus/dashboard/incidents/P5p24TrPaTRq3cYo1WJ8" rel="alternate" type="text/html"></link>
+    <id>tag:www.google.com,2022:feed:P5p24TrPaTRq3cYo1WJ8.8rQDjFB15wi1chJ1n2jw</id>
+    <updated>2022-11-30T19:04:17+00:00</updated>
+    <summary type="html">&lt;p&gt; Incident began at &lt;strong&gt;2022-10-10 22:18&lt;/strong&gt; and ended at &lt;strong&gt;2022-11-07 15:20&lt;/strong&gt; &lt;span&gt;(times are in &lt;strong&gt;Coordinated Universal Time (UTC)&lt;/strong&gt;).&lt;/span&gt;&lt;/p&gt;&lt;div class="cBIRi14aVDP__status-update-text"&gt;&lt;h1&gt;Incident Report&lt;/h1&gt;
+&lt;h2&gt;Summary&lt;/h2&gt;
+&lt;p&gt;On 10 October 2022 at 15:18 PT, Google was alerted to a subset of users experiencing issues with Duo phone number registration with our Google Meet iOS application. Once the root cause was identified, Google pushed out an update to the App Store on 4 November 2022. We believe most users (66%) updated their app by 7 November 2022. To our Google Workspace customers who were impacted during this outage, we sincerely apologize. We have conducted an internal investigation and are taking steps to improve our service.&lt;/p&gt;
+&lt;h2&gt;Root Cause&lt;/h2&gt;
+&lt;p&gt;The database version for our Google Meet backend infrastructure uses a specific library to complete the database operations to register or reregister a Duo calling account. An issue with the error-handling mechanism in the library resulted in the backend operations not functioning as intended. This caused affected users to be unable to register or reregister phone numbers, preventing the use of calling features, on the Meet iOS app.&lt;/p&gt;
+&lt;h2&gt;Remediation and Prevention&lt;/h2&gt;
+&lt;p&gt;Google engineers were alerted to the situation on 10 October 2022 at 15:18 and immediately started an investigation. Engineers reviewed the Google Meet for iOS app’s feedback logs and identified the root cause as related to registration workflow. Code improvements were identified to handle the app error seen when a user tries to register their account. The fix was deployed in a new version of the iOS app, which was rolled out to the App Store by 4 November 2022. At least 66% of users upgraded to the new version by 7 November 2022.&lt;/p&gt;
+&lt;p&gt;Google is committed to preventing a repeat of this issue in the future and is completing the following actions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Deploy additional client logging to Meet to report registration-related issues, so we can respond in a timely manner.&lt;/li&gt;
+&lt;li&gt;Deploy additional monitoring for registration errors reported by the client to more quickly alert us if these types of events happen in the future.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We apologize for the length and severity of this incident. We are taking immediate steps to prevent a recurrence and improve reliability in the future.&lt;/p&gt;
+&lt;h2&gt;Detailed Description of Impact&lt;/h2&gt;
+&lt;p&gt;From 10 October 2022 at 15:18 to 7 November 2022 at 08:20, Google Meet iOS app users may have encountered an “unable to add calling” error when trying to register or reregister their Duo calling account, which resulted in phone numbers not registering as intended.&lt;/p&gt;
+&lt;/div&gt;&lt;hr&gt;&lt;p&gt;Affected products: Google Meet&lt;/p&gt;</summary>
+  </entry>
+</feed>
